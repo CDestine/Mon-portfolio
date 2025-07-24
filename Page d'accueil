@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Mon Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Police Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ---------- Variables de palette ---------- */
+:root{
+--clr-bg:#f2f4f7; /* arrière‑plan général */
+--clr-card:#ffffffdd; /* carte (blanc 87 % opacité) */
+--clr-text:#222; /* texte principal */
+--clr-accent:#ffb703; /* couleur d’accent (bouton, liens) */
+}
+
+/* ---------- Reset minimal ---------- */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font:400 1rem/1.6 'Montserrat',sans-serif;
+background:var(--clr-bg);
+color:var(--clr-text);
+
+/* ↳ Centre la carte verticalement & horizontalement */
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:1rem; /* petit “air” autour sur mobile */
+}
+
+/* ---------- Carte d’introduction ---------- */
+.intro{
+background:var(--clr-card);
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+border-radius:14px;
+max-width:600px;
+width:100%;
+padding:clamp(1.5rem,4vw,3rem);
+text-align:center;
+}
+
+.intro h1{
+font-size:clamp(2rem,5vw,3rem);
+margin-bottom:1rem;
+}
+.intro h2{
+font-size:1.4rem;
+font-weight:500;
+margin:1rem 0;
+}
+.intro p{
+margin:1rem 0;
+max-width:45ch;
+margin-inline:auto;
+}
+
+/* ---------- Bouton CV ---------- */
+.btn{
+display:inline-block;
+margin-top:1.5rem;
+padding:.8rem 2rem;
+background:var(--clr-accent);
+color:#000;
+font-weight:600;
+border-radius:8px;
+text-decoration:none;
+transition:transform .2s;
+}
+.btn:hover,
+.btn:focus{
+transform:translateY(-3px);
+}
+</style>
+</head>
+
+<body>
+
+<section class="intro">
+<h1>Bienvenue sur mon portfolio&nbsp;!</h1>
+
+<p>Je m’appelle <strong>Christelle&nbsp;DESTINÉ</strong></p>
+<h2>Future étudiante à l’Université Littoral Côte d’Opale</h2>
+
+<p>
+J’intègre en septembre 2025 le
+<abbr title="Diplôme d’Études Universitaires Scientifiques et Techniques">DEUST</abbr>
+« Webmaster et Métiers de l’Internet » ; je cherche une alternance en
+<strong>développement&nbsp;web</strong>.
+</p>
+
+<p>
+Mon profil est atypique&nbsp;: après plusieurs années dans l’hôtellerie‑restauration,
+je me reconvertis avec passion vers le <strong>numérique</strong>.
+</p>
+
+<a class="btn" href="CV Christelle DESTINÉ.pdf" download>Télécharger mon CV</a>
+</section>
+
+</body>
+</html>
+
+
+       
